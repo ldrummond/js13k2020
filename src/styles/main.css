@@ -20,6 +20,8 @@ body {
   position: relative;
   image-rendering: crisp-edges;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body:before {
@@ -51,4 +53,56 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+#character {
+  width: 0;
+  height: 0;
+  position: relative;
+  perspective: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+}
+
+#body {
+  top: 0px;
+  width: 20px; 
+  height: 30px;
+  margin-left: -10px;
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+#board {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -10px;
+  height: 40px;
+  width: 20px;
+  background: blue;
+  transform: rotateX(90deg);
+  transform-style: preserve-3d;
+
+}
+
+#reticule {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background: green; 
 }

@@ -13,6 +13,7 @@ export default class extends Entity {
     super(opts); 
     let t = this;
 
+    t._character   = document.getElementById('character');
     t.subTypes     = Object.keys(cursors); 
     t._type        = types['player'];
     t._subType     = t.subTypes[0];

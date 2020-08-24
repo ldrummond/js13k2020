@@ -28,8 +28,6 @@ export default class {
         return {x: 50 + w.ran(w._viewport_bounds.width - 100), y: 50 + w.ran(w._viewport_bounds.height - 100), angle: 0};
       } 
 
-      console.log(w._viewport_bounds);
-
       // 
       w.cursor    = {x: w._viewport_bounds.width / 2, y: w._viewport_bounds.height / 2}
       document.addEventListener('mousemove', e => {
