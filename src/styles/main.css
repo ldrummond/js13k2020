@@ -1,0 +1,54 @@
+/* Globally Scoped */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box; 
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200;
+  letter-spacing: -0.01em;
+  word-spacing: -0.2em;
+  cursor: crosshair
+}
+
+body {
+  overflow: hidden;
+  /* background: #222; */
+  height: 100vh !important;
+  background: #222;
+  /* background-size: 10px 10px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEW6urr///82MBGFAAAAAnRSTlMmJmdAy+EAAAAoSURBVAiZBcGxEQAQAACxjG40oxhBqXBeovR0dbS1NDXE43LYLCbDB4J7Ffu1KYUXAAAAAElFTkSuQmCC'); */
+  position: relative;
+  image-rendering: crisp-edges;
+  display: flex;
+}
+
+body:before {
+  /* content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 10px 10px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEW6urr///82MBGFAAAAAnRSTlMmJmdAy+EAAAAoSURBVAiZBcGxEQAQAACxjG40oxhBqXBeovR0dbS1NDXE43LYLCbDB4J7Ffu1KYUXAAAAAElFTkSuQmCC');
+  z-index: 10; */
+}
+
+/* Id Scoped */
+#viewport {
+  margin: auto;
+  box-shadow: 8px 10px 0px 0px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  position: relative;
+  height: 90vh;
+  width: calc(80vh);
+  border: 1px solid white;
+  position: relative;
+  overflow: hidden;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
